@@ -1,17 +1,22 @@
 import React from "react";
+import SectionOne from "./SectionOne.jsx";
+import SectionTwo from "./SectionTwo.jsx";
+import NavBar from "./NavBar.jsx";
+import { useState } from "react";
 
 const Home = () => {
+  const [menu, setMenu] = useState(false);
+
+  const functionMenu = () => {
+    setMenu(!menu);
+  };
+
   return (
     <main className="main">
-      <section>
-        <p>so, you want to travel to</p>
-        <h1>space</h1>
-        <p>
-          Let's face it; if you want to go to space, you might as well genuinely
-          go to outer space and not hover kind of on the edge of it. Well sit
-          back, and relax because we'll give you a truly out of this world
-          experience!
-        </p>
+      <NavBar open={menu} change={setMenu} functionOpen={functionMenu} />
+      <section className="main__section">
+        <SectionOne />
+        <SectionTwo />
       </section>
     </main>
   );
