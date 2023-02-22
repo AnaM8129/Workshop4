@@ -8,6 +8,7 @@
         line-height: 34px;
         padding: 76px 166px;
         letter-spacing: 4.725px;
+        text-transform:uppercase;
         span{
             opacity: 0.25;
             font-weight: 700;
@@ -29,7 +30,7 @@
         }
     }
     &-colum-right{
-        max-width: 444px;
+        max-width: 454px;
         &-nav{
             ul{
                 display: flex;
@@ -69,7 +70,7 @@
         .divide{
             margin: 54px 0 28px 0;
             background-color: #383B4B;
-            height: 3px;
+            height: 1px;
             width: 100%;
             display: block;
         }
