@@ -1,0 +1,85 @@
+.crew{
+    background-image: url(../../assets/background-crew-desktop.jpg);
+    background-position: cover;
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+
+    &__main{
+        padding: 0px 137px 0px 165px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        gap: 81.43px;
+
+        // &__div1{
+        //     display: flex;
+        //     flex-direction: column;
+        //     height: 100%;
+        // }
+
+        h3{
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 34px;
+            font-family: 'Barlow Condensed';
+            letter-spacing: 4.725px;
+
+            span{
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 34px;
+                opacity: 0.25;
+            }
+        }
+
+        h2{
+            font-family: 'Bellefair';
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 37px;
+            opacity: 0.5;
+            margin-top: 154px;
+        }
+
+        h1{
+            font-family: 'Bellefair';
+            font-weight: 400;
+            font-size: 56px;
+            line-height: 64px;
+            margin-top: 15px;
+            margin-bottom: 27px;
+        }
+
+        p{
+            font-family: 'Barlow';
+            width: 444px;
+            height: 128px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            color: #D0D6F9;
+            margin-bottom: 120px;
+        }
+
+        nav{
+            display: flex;
+            gap: 24px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 0;
+            
+            .active{
+                background: #FFFFFF;
+                border-radius: 50%;
+            }
+        }
+
+        
+    }
+
+    &__picture{
+        width: 568.07px;
+        height: 712px;
+    }
+}
