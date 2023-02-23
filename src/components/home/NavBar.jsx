@@ -19,10 +19,18 @@ const navBar = ({ functionOpen, open }) => {
             />
           </figure>
           <li className="nav__ul-li">
-            <span>00</span>Home
+            <NavLink
+              to="./"
+            >
+              <span>00</span>Home
+            </NavLink>
           </li>
           <li className="nav__ul-li">
-            <span>01</span>Destination
+            <NavLink
+              to="./destination/moon"
+            >
+              <span>01</span>Destination
+            </NavLink>
           </li>
           <li className="nav__ul-li">
             <span>02</span>Crew
@@ -42,10 +50,18 @@ const navBar = ({ functionOpen, open }) => {
         </figure>
         <ul className="nav__ul">
           <li className="nav__ul-li">
-            <span>00</span>Home
+            <NavLink
+              to="./"
+            >
+              <span>00</span>Home
+            </NavLink>
           </li>
           <li className="nav__ul-li">
-            <span>01</span>Destination
+            <NavLink
+              to="./destination/moon"
+            >
+              <span>01</span>Destination
+            </NavLink>
           </li>
           <li className="nav__ul-li">
             <span>02</span>Crew
