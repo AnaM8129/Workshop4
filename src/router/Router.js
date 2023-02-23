@@ -11,6 +11,7 @@ const Router = () => {
         <Route path="/" element={<App />} >
           <Route path="/" element={<Home />} />
           <Route path="/Destination/:destinationId" element={<Destination />} />
+          {/* aqui las demas rutas*/}
         </Route>
       </Routes>
     </BrowserRouter>
