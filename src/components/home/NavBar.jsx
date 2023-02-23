@@ -33,7 +33,10 @@ const navBar = ({ functionOpen, open }) => {
             </NavLink>
           </li>
           <li className="nav__ul-li">
-            <span>02</span>Crew
+            <NavLink
+              to="./crew/Douglas%20Hurley">
+              <span>02</span>Crew
+            </NavLink>
           </li>
           <li className="nav__ul-li">
             <span>03</span>Technology
@@ -64,7 +67,10 @@ const navBar = ({ functionOpen, open }) => {
             </NavLink>
           </li>
           <li className="nav__ul-li">
-            <span>02</span>Crew
+            <NavLink
+              to="./crew/Douglas%20Hurley">
+              <span>02</span>Crew
+            </NavLink>
           </li>
           <li className="nav__ul-li">
             <span>03</span>Technology
