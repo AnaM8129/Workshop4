@@ -35,7 +35,7 @@ const navBar = ({ functionOpen, open }) => {
             </NavLink>
           </li>
           <li className="nav__ul-li">
-            <NavLink to="./Technology">
+            <NavLink to="./Technology/Launch%20vehicle">
               <span>03</span>Technology
             </NavLink>
           </li>
@@ -67,7 +67,7 @@ const navBar = ({ functionOpen, open }) => {
             </NavLink>
           </li>
           <li className="nav__ul-li">
-            <NavLink to="./Technology">
+            <NavLink to="./Technology/Launch%20vehicle">
               <span>03</span>Technology
             </NavLink>
           </li>
