@@ -27,15 +27,32 @@ const Technology = () => {
             </p>
             <div className="container-numbers-text">
               <div className="aside__container-numbers">
-                <div className="aside__container-numbers-item">
-                  <NavLink to="/Technology/Launch%20vehicle" />1
-                </div>
-                <div className="aside__container-numbers-item">
-                  <NavLink to="/Technology/Spaceport" />2
-                </div>
-                <div className="aside__container-numbers-item">
-                  <NavLink to="/Technology/Space%20capsule" />3
-                </div>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "activeButton" : "aside__container-numbers-item"
+                  }
+                  to="/Technology/Launch%20vehicle"
+                >
+                  1
+                </NavLink>
+
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "activeButton" : "aside__container-numbers-item"
+                  }
+                  to="/Technology/Spaceport"
+                >
+                  2
+                </NavLink>
+
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "activeButton" : "aside__container-numbers-item"
+                  }
+                  to="/Technology/Space%20capsule"
+                >
+                  3
+                </NavLink>
               </div>
               <article className="aside__container-text">
                 <p className="aside__container-text-firstText">
@@ -57,7 +74,7 @@ const Technology = () => {
             <figure className="image-section__figure">
               <img
                 className="image-section__figure-img"
-                src={technology.images.landscape}
+                src={technology.images.portrait}
                 alt="Vehicle image"
               />
             </figure>

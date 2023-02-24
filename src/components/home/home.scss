@@ -83,6 +83,18 @@
   }
 }
 
+.activeNav {
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #ffff;
+}
+.activeNavMobile {
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2px;
+  border-left: 2px solid #ffff;
+}
 //////////ELEMENTOS PARA NAV RESPONSIVE/////////////////
 .hamburguer {
   cursor: pointer;

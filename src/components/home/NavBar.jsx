@@ -19,23 +19,42 @@ const navBar = ({ functionOpen, open }) => {
             />
           </figure>
           <li className="nav__ul-li">
-            <NavLink to="./">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "activeNavMobile" : "nav__ul-li"
+              }
+              to="./"
+            >
               <span>00</span>Home
             </NavLink>
           </li>
           <li className="nav__ul-li">
-            <NavLink to="./destination/moon">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "activeNavMobile" : "nav__ul-li"
+              }
+              to="./destination/moon"
+            >
               <span>01</span>Destination
             </NavLink>
           </li>
           <li className="nav__ul-li">
             <NavLink
-              to="./crew/Douglas%20Hurley">
+              className={({ isActive }) =>
+                isActive ? "activeNavMobile " : "nav__ul-li"
+              }
+              to="./crew/Douglas%20Hurley"
+            >
               <span>02</span>Crew
             </NavLink>
           </li>
           <li className="nav__ul-li">
-            <NavLink to="./Technology/Launch%20vehicle">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "activeNavMobile" : "nav__ul-li"
+              }
+              to="./Technology/Launch%20vehicle"
+            >
               <span>03</span>Technology
             </NavLink>
           </li>
@@ -51,23 +70,42 @@ const navBar = ({ functionOpen, open }) => {
         </figure>
         <ul className="nav__ul">
           <li className="nav__ul-li">
-            <NavLink to="./">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "activeNav " : "nav__ul-li"
+              }
+              to="./"
+            >
               <span>00</span>Home
             </NavLink>
           </li>
           <li className="nav__ul-li">
-            <NavLink to="./destination/moon">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "activeNav " : "nav__ul-li"
+              }
+              to="./destination/moon"
+            >
               <span>01</span>Destination
             </NavLink>
           </li>
           <li className="nav__ul-li">
             <NavLink
-              to="./crew/Douglas%20Hurley">
+              className={({ isActive }) =>
+                isActive ? "activeNav " : "nav__ul-li"
+              }
+              to="./crew/Douglas%20Hurley"
+            >
               <span>02</span>Crew
             </NavLink>
           </li>
           <li className="nav__ul-li">
-            <NavLink to="./Technology/Launch%20vehicle">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "activeNav " : "nav__ul-li"
+              }
+              to="./Technology/Launch%20vehicle"
+            >
               <span>03</span>Technology
             </NavLink>
           </li>
