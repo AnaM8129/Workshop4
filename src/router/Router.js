@@ -15,7 +15,7 @@ const Router = () => {
           <Route path="/Destination/:destinationId" element={<Destination />} />
           <Route path="/Crew/:crewId" element={<Crew />} />
           {/* aqui las demas rutas*/}
-          <Route path="/Technology/:technologyId" element={<Technology />} />
+          <Route path="Technology/:technologyId" element={<Technology />} />
         </Route>
       </Routes>
     </BrowserRouter>
