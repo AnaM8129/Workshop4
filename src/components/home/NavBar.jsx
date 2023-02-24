@@ -19,16 +19,12 @@ const navBar = ({ functionOpen, open }) => {
             />
           </figure>
           <li className="nav__ul-li">
-            <NavLink
-              to="./"
-            >
+            <NavLink to="./">
               <span>00</span>Home
             </NavLink>
           </li>
           <li className="nav__ul-li">
-            <NavLink
-              to="./destination/moon"
-            >
+            <NavLink to="./destination/moon">
               <span>01</span>Destination
             </NavLink>
           </li>
@@ -39,7 +35,9 @@ const navBar = ({ functionOpen, open }) => {
             </NavLink>
           </li>
           <li className="nav__ul-li">
-            <span>03</span>Technology
+            <NavLink to="./Technology">
+              <span>03</span>Technology
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -53,16 +51,12 @@ const navBar = ({ functionOpen, open }) => {
         </figure>
         <ul className="nav__ul">
           <li className="nav__ul-li">
-            <NavLink
-              to="./"
-            >
+            <NavLink to="./">
               <span>00</span>Home
             </NavLink>
           </li>
           <li className="nav__ul-li">
-            <NavLink
-              to="./destination/moon"
-            >
+            <NavLink to="./destination/moon">
               <span>01</span>Destination
             </NavLink>
           </li>
@@ -73,7 +67,9 @@ const navBar = ({ functionOpen, open }) => {
             </NavLink>
           </li>
           <li className="nav__ul-li">
-            <span>03</span>Technology
+            <NavLink to="./Technology">
+              <span>03</span>Technology
+            </NavLink>
           </li>
         </ul>
         <figure className="hamburguer" onClick={functionOpen}>

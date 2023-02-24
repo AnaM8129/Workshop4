@@ -1,26 +1,28 @@
-import React, { useEffect, useState }  from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
-import axios from 'axios';
+import axios from "axios";
 
-const baseURL = "https://mini-back-workshop-4-production.up.railway.app/destinations";
+const baseURL =
+  "https://mini-back-workshop-4-production.up.railway.app/destinations";
 
 const Destination = () => {
   const { destinationId } = useParams();
   const [destination, setDestination] = useState(null);
 
-  useEffect(()=>{
-    if(destinationId){
+  useEffect(() => {
+    if (destinationId) {
       axios.get(`${baseURL}?name_like=${destinationId}`).then((response) => {
         setDestination(response.data[0]);
       });
     }
-  }, [destinationId])
-
-  return(
+  }, [destinationId]);
+  return (
     <>
-      {destination &&
+      {destination && (
         <section className="destination">
-          <h2><span>01</span>Pick your destination</h2>
+          <h2>
+            <span>01</span>Pick your destination
+          </h2>
           <div className="destination-row">
             <figure>
               <img src={destination.images.png} alt="planet" />
@@ -32,7 +34,7 @@ const Destination = () => {
                     <NavLink
                       to="/destination/moon"
                       className={({ isActive }) =>
-                        isActive ? 'underline link' : 'link'
+                        isActive ? "underline link" : "link"
                       }
                     >
                       MOON
@@ -42,7 +44,7 @@ const Destination = () => {
                     <NavLink
                       to="/destination/mars"
                       className={({ isActive }) =>
-                        isActive ? 'underline link' : 'link'
+                        isActive ? "underline link" : "link"
                       }
                     >
                       MARS
@@ -52,7 +54,7 @@ const Destination = () => {
                     <NavLink
                       to="/destination/europa"
                       className={({ isActive }) =>
-                        isActive ? 'underline link' : 'link'
+                        isActive ? "underline link" : "link"
                       }
                     >
                       EUROPA
@@ -62,7 +64,7 @@ const Destination = () => {
                     <NavLink
                       to="/destination/titan"
                       className={({ isActive }) =>
-                        isActive ? 'underline link' : 'link'
+                        isActive ? "underline link" : "link"
                       }
                     >
                       TITAN
@@ -70,8 +72,12 @@ const Destination = () => {
                   </li>
                 </ul>
               </nav>
-              <span className="destination-colum-right-title">{destination.name.toUpperCase()}</span>
-              <p className="destination-colum-right-text">{destination.description}</p>
+              <span className="destination-colum-right-title">
+                {destination.name.toUpperCase()}
+              </span>
+              <p className="destination-colum-right-text">
+                {destination.description}
+              </p>
               <span className="divide" />
               <div className="description-row">
                 <p className="item">
@@ -86,7 +92,7 @@ const Destination = () => {
             </div>
           </div>
         </section>
-      }
+      )}
     </>
   );
 };
